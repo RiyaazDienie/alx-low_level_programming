@@ -1,51 +1,23 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - Prints quote
  *
- *  *main - Entry Point
+ * Return: zero on success
  *
- *   *-----------------------------------------------------------------------------
- *
- *    *Create Variables
- *
- *     *-----------------------------------------------------------------------------
- *
- *      *Use the sizeof operator to operate the size of the variables
- *
- *       *Return: 0
- *
- *        */
-
-
-
+ */
 int main(void)
-
 {
+	int charSize = sizeof(char);
+	int intSize = sizeof(int);
+	int longSize = sizeof(long int);
+	int longlongSize = sizeof(long long int);
+	int floatSize = sizeof(float);
 
-		char charType;
-
-			int intType;
-
-				long int longIntType;
-
-					long long int longLongIntType;
-
-						float floatType;
-
-
-
-							printf("Size of a char: %ld byte(s)\n", sizeof(charType));
-
-								printf("Size of an int: %ld byte(s)\n", sizeof(intType));
-
-									printf("Size of a long int: %ld byte(s)\n", sizeof(longIntType));
-
-										printf("Size of a long long int: %ld byte(s)\n", sizeof(longLongIntType));
-
-											printf("Size of a float: %ld byte(s)\n", sizeof(floatType));
-
-												return (0);
-
+	printf("Size of a char: %d byte(s)\n", charSize);
+	printf("Size of an int: %d byte(s)\n", intSize);
+	printf("Size of a long int: %d byte(s)\n", longSize);
+	printf("Size of a long long int: %d byte(s)\n", longlongSize);
+	printf("Size of a float: %d byte(s)\n", floatSize);
+	return (0);
 }
