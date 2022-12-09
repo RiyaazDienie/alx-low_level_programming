@@ -1,32 +1,21 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-
+#include <unistd.h>
 /**
- * main - Prints alphabet
- * @void: Empty parameter list for main.
- *
- * Description: Prints the alphabet in lower and upper case
- * Can only use putchar
- *
- * Return: 0 for success
-*/
+ * main - Entry point
+ * Description: prints alphabet in lowercase then uppercase
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	char letter = 'a';
+	int ch;
 
-	while (letter <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(letter);
-		letter++;
+		putchar(ch);
 	}
-
-	letter = 'A';
-
-	while (letter <= 'Z')
+	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
-		putchar(letter);
-		letter++;
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
