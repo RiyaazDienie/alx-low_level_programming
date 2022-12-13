@@ -1,29 +1,22 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-
+#include <unistd.h>
 /**
  * main - Entry point
- * Description: Print lower and upper alphabet on the same line
- * Return: Always 0 (Success)
- * Author: IanoNjuguna
+ * Description: prints alphabet in lowercase then uppercase
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-char z = 'a';
-char Z = 'A';
+	int ch;
 
-while (z <= 'z')
-{
-	putchar(z);
-	z++;
-}
-while (Z <= 'Z')
-{
-	putchar(Z);
-	Z++;
-}
-putchar('\n');
-return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
